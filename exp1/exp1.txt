@@ -1,0 +1,67 @@
+/////         LINUX BASIC COMMANDS      ///////
+
+1. text <file name>		//for creating a file//
+2. mkdir<directory name>	//for creating a directory//
+3. pwd				//for showing current working directory//
+4. cd <directory name>		//to change the directory currently we are on//
+5. cat <file name>		//to view file content in terminal//
+6. cat <file1> <file2>		//to concatenate to files and view it in terminal//
+7. more <file name>		//to view content of a file//
+8. less <filename>		//to view content of a file.it is faster in large files than more//
+9. ls 				//it will dispalay details of contents in the current directory//
+10.ls -l			//it will print all the details of contents//
+11.ls -l -h			//same as above, but it prints sizes more handy//
+12.ls -F			//prints files which are executable with a * and direcories with a/ //
+13.ls --color			//will show a coloured listing of files - directories in blue executables in green //
+14.ls -a			// it will display all files including dot files //
+15.cp <file1> <file2>		// it will copy file1 to fil2. if file2 is already existing it will be overwritten //
+16.cp <file> <directory>	//will copy file to the directory //
+17.cp -r <directory1> <directory2>  //will copy directory1 to directory2 //
+18.mv <old filename> <new filename> //will change the file name of a file//
+19.mv <old dirname> <new dirname>   //will change the directory name//
+20.mv <filname> <dirname>	    //will move file to a directory//
+21.rm <file name>		    //will remove file//
+22.rm <dirname>			    //will remove an empty directory//
+23.rm -rf <dirname>		    //will remove a nonempty directory //
+24.clear			    //will clears the terminal screen //
+25.locate			    //search for a specified file name //
+26.whoami			    //displays currently logged in user //
+
+
+
+/////		DIRECTORY STRUCTURES	//////
+
+1. /			//root directory of entire file system hierarchy//
+2. /bin/		//essential user command binaries//
+3. /boot/		//static files of the boot loader//
+4. /dev/		//device files//
+5. /etc/		//host specific system configuration//
+6. /home/		//user home directories//
+7. /lib/		//essential shared libraries and kernal modules//
+8. /media/		//mount point for removable media//
+9. /mnt/		//mount point for temporarly mounted filesystems//
+10./opt/		//add on application software packages//
+11. /sbin/		//system binaries//
+12./srv/		//data for services provided by this system//
+13./tmp/		//temporary files//
+14./usr/		//multi-user utilities and applications//	
+15./var/		//variable files//
+16./root/		//home directory for the root user//
+17./proc/		//virtul filesystem documenting kernal and progress status as text files//
+
+/////		EXECUTING A FILE	/////
+	
+1.change the directory to the file containing directory
+2.type chmod +x name of file
+3.sh ./name_of_file.sh to execute the file
+
+
+
+
+///	SPECIAL DIRECTORIES ///
+
+1. . 			//the current directory//
+2. ..			//parent directory of the current directory//
+3. ~			//home directory//
+4. /			//root directory//
+5. ~<username>		//another user's directory//	

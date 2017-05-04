@@ -1,0 +1,97 @@
+## REDIRECTION
+
+Output redirection:
+The o/p of a program is saved in another file using  >              operator
+
+Input redirection:
+We can read data from a file and give it to another file             using < operator
+
+to append :
+use >>
+
+## PIPING :
+
+The output from the program on the left is fed as input to the program on the right using the operator |
+
+## FILTERS :
+
+A filter is a program that accepts textual data and then transforms it in a particular way. They take raw data, either produced by another program, or stored in a file, and manipulate it to be displayed in a more suitable way.
+
+## FILTER COMMANDS
+
+head		//view the first n lines of data
+tail		//view the last n lines of data.
+sort		//organise the data into order.
+nl		//print line numbers before data.
+wc		//print a count of lines, words and characters.
+
+## JOB CONTROL
+
+A job is defined as a task or command that has started running but not yet finished what it is doing.
+
+jobs 		// List all the jobs that are running or suspended.
+fg 		// Bring the job to the foreground.
+bg 		//Send the job to the background.
+stop or Ctrl + z // Suspend the job.
+kill or Ctrl + c // Terminate the job.
+
+## FILE PERMISSION
+
+
+The chmod command is used to change the permissions of a file or directory
+
+## FILE OWNERSHIP
+
+To change the owner of a file we can use the chown command
+
+## FILE LINKS
+
+A link is a connection between a file name and the actual data on the disk,ie we can have access to file using multiple names by creating a link.
+
+Two types of links
+    symbolic links: Refer to a symbolic path indicating the abstract location of another file
+    hard links : Refer to the specific location of physical data
+
+commands:
+
+ln <filname> <link name>		//for hard link
+ln -s <filname> <link name> 		//for symbolic link
+
+## File System Hierarchy Standard Organisation
+
+The /boot/ directory
+Contains static files required to boot the system.
+The /dev/ directory
+Contains file system entries which represent devices that are attached to the system. These files are essential for the system to function properly.
+The /etc/ directory
+Reserved for configuration files that are local to the machine.
+The X11/ and skel/ are subdirectories of this directory.
+The /lib/ directory
+Contain only those libraries needed to execute the binaries in /bin/ and /sbin/.
+These shared library images are important for booting the system and executing the commands within the root file system.
+The /mnt/ directory
+This directory is for temporarily mounted file systems, such as CD-ROMs 
+The /opt/ directory
+Provides storage for large, static application software packages.
+The /proc/ directory
+Contains special files that either extract information from or send information to the kernel
+This directory can be used to communicate with the kernel
+The /sbin/ directory
+Stores executables used by the root user, which are only used at boot time and perform system recovery operations. 
+The /usr/ directory
+This directory is for files that can be shared across mulltiple machines.It is read only.Often on its own paritition.
+There are many subdirectories like |- bin/ ,|-doc/ ,|-tmp →/var/tmp 
+The /usr/local directory
+It is for use by the system administrator when installing software locally. 
+It have many subdirectories like |-bin/ ,|-doc/ ,|-games/ etc similar to  /usr/ directory.
+The /var/ directory
+Any program that write log files or need spool/ or /lock  should write them to /var/ directory.
+/var/ is for variable data files. 
+The are many subdirectories found within this directory
+ /var
+      |- accout/
+      |- arpwatch/
+      +- spool/
+                         |- at/
+                         |- news/
+      |- tmp/

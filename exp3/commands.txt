@@ -1,0 +1,8 @@
+## commands ###
+echo -e "User name: $USER (Login name: $LOGNAME)"		//outputs user and login name
+echo -e "Current Shell: $SHELL"					//outputs current shell
+echo -e "Home Directory: $HOME"					//outputs home
+echo -e "Your O/s Type: $OSTYPE"				//outputs ostype
+echo -e "PATH: $PATH"						//outputs path
+echo -e "Current directory: `pwd`"				//outputs the current path
+echo -e "Currently Logged: $(who --count) user(s)"		//outputs number of users
