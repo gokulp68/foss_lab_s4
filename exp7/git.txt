@@ -1,0 +1,31 @@
+Configuring git:
+$ git config --global user.name "name"
+$ git config --global user.email mailid
+
+Checking the settings:
+$ git config –list
+
+
+Initializing a Repositry:
+$ git init
+
+Start local version:
+$ git add
+$ git commit –m "Message"
+
+Cloning a Repository from elsewhere:
+$ git clone URL mypath
+
+Push pull fetch and merge:
+Push  To remote
+$ git push  origin branch_name
+Fetch & Merge
+$ git pull
+Fork
+$ git fork URL
+Merge
+$ git merge origin master
+
+
+Checking the status:
+$ git status
